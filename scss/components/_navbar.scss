@@ -1,0 +1,10 @@
+
+.navbar {
+  background-color: $primary-color;
+  .nav-link {
+    color: #fff;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}

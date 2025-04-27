@@ -1,0 +1,27 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,CAAC,CAAC;EAAE,MAAM,EAAE,CAAC;EAAE,OAAO,EAAE,CAAC;EAAE,UAAU,EAAE,UAAU;CAAI;;ACArD,AAAA,IAAI,CAAC;EAAE,WAAW,EAAE,uBAAuB;EAAE,SAAS,EAAE,IAAI;EAAE,KAAK,EJKtD,IAAI;CILmE;;ACApF,AAAA,YAAY,CAAC;EAAE,UAAU,EAAE,MAAM;CAAI;;ACcrC,AAAA,YAAY,CAAC;EAZX,gBAAgB,ENDF,OAAO;EMErB,KAAK,EAYiC,IAAI;EAX1C,OAAO,EAAE,WAAW;EACpB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,OAAO;EACf,UAAU,EAAE,qBAAqB;CAQlC;;AAFD,AALE,YAKU,AALT,MAAM,CAAC;EACN,gBAAgB,EAAE,OAAsB;CACzC;;ACVH,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,GAAG,CAAC,KAAK,CPIJ,IAAI;EOHjB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,kBAAe;CACtC;;ACLD,AAAA,OAAO,CAAC;EACN,gBAAgB,ERDF,OAAO;CQQtB;;AARD,AAEE,OAFK,CAEL,SAAS,CAAC;EACR,KAAK,EAAE,IAAI;CAIZ;;AAPH,AAII,OAJG,CAEL,SAAS,AAEN,MAAM,CAAC;EACN,KAAK,ERJI,OAAO;CQKjB;;ACNL,AAAA,KAAK,EAAE,QAAQ,CAAC;EACd,MAAM,EAAE,GAAG,CAAC,KAAK,CTIJ,IAAI;ESHjB,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,MAAM;CAChB;;ACLD,AAAA,OAAO,CAAC;EAAE,gBAAgB,EVGZ,OAAO;EUHqB,OAAO,EAAE,MAAM;CAAI;;ACA7D,AAAA,OAAO,CAAC;EAAE,gBAAgB,EXIb,OAAO;EWJqB,KAAK,EAAE,IAAI;EAAE,OAAO,EAAE,MAAM;CAAI;;ACAzE,AAAA,IAAI,CAAC;EAAE,OAAO,EAAE,IAAI;EAAE,SAAS,EAAE,IAAI;CAAI;;ACCzC,MAAM,EAAE,SAAS,EAAE,KAAK;EACtB,AAAA,YAAY,CAAC;IAAE,OAAO,EAAE,IAAI;GAAI;;;ACFlC,AAAA,YAAY,CAAC;EAAE,gBAAgB,EAAE,wBAAwB;EAAE,eAAe,EAAE,KAAK;CAAI;;ACArF,AAAA,gBAAgB,CAAC;EAAE,OAAO,EAAE,MAAM;CAAI;;ACAtC,AAAA,gBAAgB,CAAC;EAAE,gBAAgB,EhBEpB,OAAO;EgBF8B,KAAK,EAAE,IAAI;CAAI;;ACAnE,AAAA,iBAAiB,CAAC;EAAE,gBAAgB,EjBGtB,OAAO;CiBHiC",
+    "sources": [
+        "main.scss",
+        "abstracts/_variables.scss",
+        "abstracts/_mixins.scss",
+        "abstracts/_functions.scss",
+        "base/_reset.scss",
+        "base/_typography.scss",
+        "base/_utilities.scss",
+        "components/_buttons.scss",
+        "components/_cards.scss",
+        "components/_navbar.scss",
+        "components/_form.scss",
+        "layout/_header.scss",
+        "layout/_footer.scss",
+        "layout/_grid.scss",
+        "layout/_responsive.scss",
+        "pages/_home.scss",
+        "pages/_recetas.scss",
+        "pages/_ofertas.scss",
+        "pages/_contacto.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
