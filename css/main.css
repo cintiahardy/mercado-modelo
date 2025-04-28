@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #3d8b40;
+}
+
+.card {
+  border: 1px solid #DDD;
+  border-radius: 16px;
+  padding: 1rem;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  background-color: #4CAF50;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover {
+  color: #FFA726;
+}
+
+input, textarea {
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.header {
+  background-color: #F9F9F9;
+  padding: 1rem 0;
+}
+
+.footer {
+  background-color: #2E7D32;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+.home-banner {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+}
+
+.recetas-section {
+  padding: 2rem 0;
+}
+
+.ofertas-section {
+  background-color: #FFA726;
+  color: #fff;
+}
+
+.contacto-section {
+  background-color: #F9F9F9;
+}
