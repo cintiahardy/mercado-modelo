@@ -2,34 +2,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto | Mercado Modelo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Modelo - Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main/main.css">
 </head>
-<body>
-  <header class="header text-center p-3">
-    <h1>Contacto</h1>
-  </header>
+<body style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);">
 
-  <main class="container my-5 contacto-section">
-    <h2 class="text-center mb-4">¡Escribinos!</h2>
-    <form class="mx-auto" style="max-width: 500px;">
-      <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" />
-      </div>
-      <div class="mb-3">
-        <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="mensaje" rows="4"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Mercado Modelo</a>
+        <div>
+            <a class="btn btn-outline-dark" href="ofertas.html">Ofertas</a>
+            <a class="btn btn-outline-dark" href="recetas.html">Recetas</a>
+        </div>
+    </div>
+</nav>
+
+<header class="text-center my-5">
+    <h1 class="display-4 text-white">Contacto</h1>
+</header>
+
+<section class="container my-5">
+    <form class="bg-light p-5 rounded">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" required>
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning">Enviar</button>
     </form>
-  </main>
+</section>
 
-  <footer class="footer text-center">
-    <p>&copy; 2025 Mercado Modelo</p>
-  </footer>
+<footer class="text-center py-4 bg-warning mt-5">
+    <p class="mb-0">© 2025 Mercado Modelo - Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
