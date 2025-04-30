@@ -1,15 +1,126 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía general y fondo */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+  background: linear-gradient(to bottom, #d1fae5, #ecfdf5);
 }
 
-header h1 {
+/* Estilo para encabezados */
+h1, h2, h3 {
+  color: #065f46;
+}
+
+/* Cabecera */
+.navbar {
+  border-bottom: 2px solid #f59e0b;
+}
+
+.navbar-brand {
   font-weight: bold;
+  font-size: 1.6rem;
+  color: #065f46;
 }
 
+.navbar .btn {
+  margin-left: 0.5rem;
+}
+
+/* Contenido principal */
+main {
+  padding: 2rem;
+}
+
+/* Página de ofertas */
+main.ofertas {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seccion-ofertas {
+  margin-top: 2rem;
+}
+
+.grid-ofertas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.tarjeta-oferta {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-oferta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta-oferta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Footer */
 footer {
-  background-color: #ffc107;
+  background-color: #facc15;
+  padding: 1rem 0;
+  color: #212529;
 }
 
-.btn-outline-dark {
-  margin-left: 5px;
+footer a {
+  color: #212529;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #065f46;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Video de receta (si se reutiliza esta clase en otras páginas) */
+.video-receta iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 12px;
 }

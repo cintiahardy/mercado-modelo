@@ -1,53 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado Modelo - Recetas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="scss/main/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mercado Modelo - Recetas</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <style>
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      text-align: center;
+      line-height: 60px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: transform 0.3s ease;
+      text-decoration: none;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .video-receta {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .video-receta iframe {
+      width: 80%;
+      height: 450px;
+      border-radius: 12px;
+    }
+  </style>
 </head>
-<body style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+
+<body style="background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Mercado Modelo</a>
-        <div>
-            <a class="btn btn-outline-dark" href="ofertas.html">Ofertas</a>
-            <a class="btn btn-outline-dark" href="contacto.html">Contacto</a>
-        </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Mercado Modelo</a>
+    <div>
+      <a class="btn btn-outline-dark" href="index.html">Inicio</a>
+      <a class="btn btn-outline-dark" href="ofertas.html">Ofertas</a>
+      <a class="btn btn-outline-dark" href="contacto.html">Contacto</a>
     </div>
+  </div>
 </nav>
 
-<header class="text-center my-5">
-    <h1 class="display-4 text-white">Recetas Saludables</h1>
-</header>
+<main class="container text-center my-5">
+  <h2 class="text-black">Receta saludable recomendada</h2>
+  <p class="lead text-black">Descubrí esta receta fresca y natural de Paulina Cocina:</p>
 
-<section class="container my-5">
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card">
-                <img src="img/raw-cross-ingredient-studio-citrus.jpg" class="card-img-top" alt="Cítricos">
-                <div class="card-body">
-                    <h5 class="card-title">Ensalada de cítricos</h5>
-                    <p class="card-text">Una ensalada fresca con naranja, pomelo y menta. ¡Ideal para el verano!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card">
-                <img src="img/stack-carrots-bowl-marble.jpg" class="card-img-top" alt="Zanahorias">
-                <div class="card-body">
-                    <h5 class="card-title">Sopa de zanahoria</h5>
-                    <p class="card-text">Sopa cremosa de zanahoria con un toque de jengibre. Deliciosa y nutritiva.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  <div class="video-receta">
+    <iframe src="https://www.youtube.com/embed/G3JfV4BCuwg"
+      title="21 ENSALADAS que NO SON lechuga y tomate - Paulina Cocina"
+      frameborder="0" allowfullscreen></iframe>
+  </div>
+</main>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/5493482332865" target="_blank" class="whatsapp-btn" title="¡Escribinos por WhatsApp!">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <footer class="text-center py-4 bg-warning mt-5">
-    <p class="mb-0">© 2025 Mercado Modelo - Todos los derechos reservados.</p>
+  <p class="mb-0">© 2025 Mercado Modelo - Todos los derechos reservados.</p>
+  <p>También podés encontrarnos en:</p>
+  <a href="https://www.instagram.com" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.facebook.com" target="_blank" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.tiktok.com" target="_blank" title="TikTok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  <a href="https://wa.me/543482332865" target="_blank" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </footer>
 
 </body>
