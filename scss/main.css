@@ -9,7 +9,8 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #212529;
-  background: linear-gradient(to bottom, #d1fae5, #ecfdf5);
+  background: linear-gradient(to bottom, #d1fae5, #ecfdf5); /* Fondo degradado */
+  min-height: 100vh;
 }
 
 /* Estilo para encabezados */
@@ -37,33 +38,30 @@ main {
   padding: 2rem;
 }
 
-/* Página de ofertas */
-main.ofertas {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+main.container {
+  background-color: transparent;
 }
 
-.seccion-ofertas {
+/* Estilos específicos para ofertas.html */
+.ofertas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
-.grid-ofertas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  padding: 2rem;
-}
-
 .tarjeta-oferta {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 300px;
+  background-color: #ffffffd9;
+  border-radius: 12px;
+  padding: 1rem;
   text-align: center;
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  flex: 1 1 250px;
+  width: 300px;
+  max-width: 300px;
+  overflow: hidden;
 }
 
 .tarjeta-oferta:hover {
@@ -74,6 +72,8 @@ main.ofertas {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */
@@ -117,10 +117,30 @@ footer a:hover {
   transform: scale(1.1);
 }
 
-/* Video de receta (si se reutiliza esta clase en otras páginas) */
+/* Video de receta */
 .video-receta iframe {
   width: 100%;
   max-width: 800px;
   height: 450px;
   border-radius: 12px;
 }
+
+/* Página ofertas - secciones específicas */
+main.ofertas {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seccion-ofertas {
+  margin-top: 2rem;
+}
+
+.grid-ofertas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+

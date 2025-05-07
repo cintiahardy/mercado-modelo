@@ -15,14 +15,23 @@
 
 <body style="background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);">
 
-  <!-- Navbar -->
+  <!-- Navbar responsiva -->
   <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Mercado Modelo</a>
-      <div>
-        <a class="btn btn-outline-dark" href="index.html">Inicio</a>
-        <a class="btn btn-outline-dark" href="ofertas.html">Ofertas</a>
-        <a class="btn btn-outline-dark" href="recetas.html">Recetas</a>
+      <a class="navbar-brand" href="index.html">Mercado Modelo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="btn btn-outline-dark m-1" href="index.html">Inicio</a>
+          <a class="btn btn-outline-dark m-1" href="ofertas.html">Ofertas</a>
+          <a class="btn btn-outline-dark m-1" href="recetas.html">Recetas</a>
+          <a class="btn btn-outline-dark m-1" href="sucursales.html">Sucursales</a>
+          <a class="btn btn-outline-dark m-1" href="nosotros.html">Nosotros</a>
+          <a class="btn btn-outline-dark m-1" href="contacto.html">Contacto</a>
+        </div>        
       </div>
     </div>
   </nav>
@@ -75,6 +84,8 @@
     <p class="mb-0">© 2025 Mercado Modelo - Todos los derechos reservados.</p>
   </footer>
 
+  <!-- Scripts de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
