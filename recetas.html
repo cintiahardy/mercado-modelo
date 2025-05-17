@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mercado Modelo - Recetas</title>
 
   <!-- Bootstrap CSS -->
@@ -11,10 +11,10 @@
   <!-- Font Awesome para íconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- CSS propio -->
-  <link rel="stylesheet" href="css/main.css">
-
   <style>
+    body {
+      background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    }
     .whatsapp-btn {
       position: fixed;
       bottom: 20px;
@@ -35,7 +35,6 @@
     .whatsapp-btn:hover {
       transform: scale(1.1);
     }
-
     .video-receta {
       display: flex;
       justify-content: center;
@@ -46,10 +45,15 @@
       height: 450px;
       border-radius: 12px;
     }
+    .card-img-top {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      height: 200px;
+      object-fit: cover;
+    }
   </style>
 </head>
-
-<body style="background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);">
+<body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
   <div class="container-fluid">
@@ -73,6 +77,71 @@
     <iframe src="https://www.youtube.com/embed/G3JfV4BCuwg"
       title="21 ENSALADAS que NO SON lechuga y tomate - Paulina Cocina"
       frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <h3 class="mb-4 text-black">Otras recetas saludables</h3>
+  
+  <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
+    <div class="col">
+      <div class="card h-100 shadow-sm" style="border-radius: 15px;">
+        <img src="img/pexels-polina-tankilevitch-3872373.jpg" class="card-img-top" alt="Ensalada de quinoa">
+        <div class="card-body">
+          <h5 class="card-title text-success">Ensalada de quinoa y vegetales</h5>
+          <p class="card-text">Una mezcla nutritiva con quinoa, tomate, pepino, y hierbas frescas. Ideal para un almuerzo ligero y lleno de energía.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow-sm" style="border-radius: 15px;">
+        <img src="img/pexels-ifreestock-616833.jpg" class="card-img-top" alt="Smoothie verde">
+        <div class="card-body">
+          <h5 class="card-title text-success">Smoothie verde detox</h5>
+          <p class="card-text">Refrescante batido con espinaca, manzana, pepino y limón para depurar y revitalizar tu cuerpo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow-sm" style="border-radius: 15px;">
+        <img src="img/pexels-chantal-lenting-18393851-11906476.jpg" class="card-img-top" alt="Wrap vegetal">
+        <div class="card-body">
+          <h5 class="card-title text-success">Wrap de vegetales y hummus</h5>
+          <p class="card-text">Una opción rápida y deliciosa con hummus, zanahoria rallada, lechuga y tomate en una tortilla integral.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nuevas recetas -->
+    <div class="col">
+      <div class="card h-100 shadow-sm" style="border-radius: 15px;">
+        <img src="img/pexels-n-voitkevich-5605574.jpg" class="card-img-top" alt="Sopa cremosa de calabaza">
+        <div class="card-body">
+          <h5 class="card-title text-success">Sopa cremosa de calabaza</h5>
+          <p class="card-text">Un plato reconfortante y nutritivo con calabaza, cebolla y un toque de crema para los días frescos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow-sm" style="border-radius: 15px;">
+        <img src="img/pexels-janetrangdoan-1132047.jpg" class="card-img-top" alt="Bowl de frutas frescas">
+        <div class="card-body">
+          <h5 class="card-title text-success">Bowl de frutas frescas</h5>
+          <p class="card-text">Una combinación colorida de frutas de temporada que aporta vitaminas y frescura para comenzar el día.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow-sm" style="border-radius: 15px;">
+        <img src="img/pexels-janetrangdoan-769969.jpg" class="card-img-top" alt="Pasta integral con verduras salteadas">
+        <div class="card-body">
+          <h5 class="card-title text-success">Pasta integral con verduras salteadas</h5>
+          <p class="card-text">Un plato saludable con pasta integral, pimientos, calabacín y tomate, salteados con ajo y especias.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
 
